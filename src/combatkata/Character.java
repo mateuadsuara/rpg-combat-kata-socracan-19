@@ -1,30 +1,59 @@
 package combatkata;
 
 public class Character {
-    static int INITIAL_HEALTH = 1000;
-    static int INITIAL_LEVEL = 1;
+    private static int MAX_HEALTH = 1000;
+    private static int INITIAL_LEVEL = 1;
 
     private int health;
     private int level;
 
     public Character() {
-        health = INITIAL_HEALTH;
-        level = INITIAL_LEVEL;
+        this(INITIAL_LEVEL);
     }
 
-    public void damages(Character character, int amount) {
-        character.health -= amount;
-
+    public Character(int level) {
+        health = MAX_HEALTH;
+        this.level = level;
     }
 
-    public void heals(Character character, int amount) {
-        if (!character.isAlive()) {
+    public void damage(Character character, int amount) {
+        if (character == this) {
             return;
         }
 
-        character.health += amount;
-        if (character.health > 1000) {
-            character.health = 1000;
+        character.health -= calculateDamage(character, amount);
+    }
+
+    private int calculateDamage(Character character, int amount) {
+        if (this.isOverpoweredBy(character)) {
+            return reducedDamage(amount);
+        }
+        if (character.isOverpoweredBy(this)){
+            return increasedDamage(amount);
+        }
+        return amount;
+    }
+
+    private int increasedDamage(int damage) {
+        return (int) (damage * 1.5);
+    }
+
+    private int reducedDamage(int damage) {
+        return damage / 2;
+    }
+
+    private boolean isOverpoweredBy(Character character) {
+        return character.level >= this.level + 5;
+    }
+
+    public void heal(int amount) {
+        if (!this.isAlive()) {
+            return;
+        }
+
+        this.health += amount;
+        if (this.health > MAX_HEALTH) {
+            this.health = MAX_HEALTH;
         }
     }
 
