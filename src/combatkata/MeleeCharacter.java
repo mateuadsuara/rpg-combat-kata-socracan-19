@@ -28,25 +28,17 @@ public class MeleeCharacter {
             return;
         }
 
-        meleeCharacter.health -= calculateDamage(meleeCharacter, amount);
+        meleeCharacter.health -= calculateAttackModifier(meleeCharacter).modify(amount);
     }
 
-    private int calculateDamage(MeleeCharacter meleeCharacter, int amount) {
+    private AttackModifier calculateAttackModifier(MeleeCharacter meleeCharacter) {
         if (this.isOverpoweredBy(meleeCharacter)) {
-            return reducedDamage(amount);
+            return new ReducedModifier();
         }
         if (meleeCharacter.isOverpoweredBy(this)) {
-            return increasedDamage(amount);
+            return new IncreasedModifier();
         }
-        return amount;
-    }
-
-    private int increasedDamage(int damage) {
-        return (int) (damage * 1.5);
-    }
-
-    private int reducedDamage(int damage) {
-        return damage / 2;
+        return new NoModifier();
     }
 
     private boolean isOverpoweredBy(MeleeCharacter meleeCharacter) {
