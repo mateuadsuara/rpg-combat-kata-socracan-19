@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e13440c-216d-46f4-b8b5-1dfebf438dbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/combatkata/RangedCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/combatkata/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/combatkata/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CharacterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CharacterShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/combat-kata/combatkata/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/combat-kata/CharacterShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/combatkata/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/combatkata/MeleeCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CharacterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MeleeCharacterShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,42 +18,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/CharacterShould.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/MeleeCharacterShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="114">
+              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1400#1401#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/combatkata/Character.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/combatkata/RangedCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="10" selection-start-line="3" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="114">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/combatkata/MeleeCharacter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#202#203#0" expanded="true" />
                 <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#1390#1391#0" expanded="true" />
-                <element signature="e#1447#1448#0" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+                <element signature="e#1360#1361#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1699#1700#0" expanded="true" />
+                <element signature="e#1764#1765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,6 +93,9 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/test/CharacterShould.java" />
         <option value="$PROJECT_DIR$/src/combatkata/Character.java" />
+        <option value="$PROJECT_DIR$/src/combatkata/MeleeCharacter.java" />
+        <option value="$PROJECT_DIR$/src/combatkata/RangedCharacter.java" />
+        <option value="$PROJECT_DIR$/test/MeleeCharacterShould.java" />
       </list>
     </option>
   </component>
@@ -92,12 +103,16 @@
     <option name="width" value="840" />
     <option name="height" value="768" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,8 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,6 +156,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="combatkata" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="combatkata" />
     </key>
@@ -159,63 +175,72 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CharacterShould">
-    <configuration name="CharacterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MeleeCharacterShould">
+    <configuration name="MeleeCharacterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="combat-kata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharacterShould" />
+      <option name="MAIN_CLASS_NAME" value="MeleeCharacterShould" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CharacterShould.beBornWith1000Health" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeleeCharacterShould.beBornWith1000Health" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="combat-kata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharacterShould" />
+      <option name="MAIN_CLASS_NAME" value="MeleeCharacterShould" />
       <option name="METHOD_NAME" value="beBornWith1000Health" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CharacterShould.cannotBeHealedWhenDead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeleeCharacterShould.cannotBeHealedWhenDead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="combat-kata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharacterShould" />
+      <option name="MAIN_CLASS_NAME" value="MeleeCharacterShould" />
       <option name="METHOD_NAME" value="cannotBeHealedWhenDead" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CharacterShould.cannotHealAnotherPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeleeCharacterShould.cannotHealAnotherPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="combat-kata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharacterShould" />
+      <option name="MAIN_CLASS_NAME" value="MeleeCharacterShould" />
       <option name="METHOD_NAME" value="cannotHealAnotherPlayer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CharacterShould.underpoweredCharacterReceives50PercentMoreDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeleeCharacterShould.underpoweredCharacterReceives50PercentMoreDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="combat-kata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharacterShould" />
+      <option name="MAIN_CLASS_NAME" value="MeleeCharacterShould" />
       <option name="METHOD_NAME" value="underpoweredCharacterReceives50PercentMoreDamage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MeleeCharacterShould" />
+      <item itemvalue="JUnit.MeleeCharacterShould.beBornWith1000Health" />
+      <item itemvalue="JUnit.MeleeCharacterShould.cannotBeHealedWhenDead" />
+      <item itemvalue="JUnit.MeleeCharacterShould.cannotHealAnotherPlayer" />
+      <item itemvalue="JUnit.MeleeCharacterShould.underpoweredCharacterReceives50PercentMoreDamage" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CharacterShould" />
-        <item itemvalue="JUnit.CharacterShould.underpoweredCharacterReceives50PercentMoreDamage" />
-        <item itemvalue="JUnit.CharacterShould.cannotBeHealedWhenDead" />
-        <item itemvalue="JUnit.CharacterShould.cannotHealAnotherPlayer" />
-        <item itemvalue="JUnit.CharacterShould.beBornWith1000Health" />
+        <item itemvalue="JUnit.MeleeCharacterShould" />
+        <item itemvalue="JUnit.MeleeCharacterShould.underpoweredCharacterReceives50PercentMoreDamage" />
+        <item itemvalue="JUnit.MeleeCharacterShould.cannotBeHealedWhenDead" />
+        <item itemvalue="JUnit.MeleeCharacterShould.cannotHealAnotherPlayer" />
+        <item itemvalue="JUnit.MeleeCharacterShould.beBornWith1000Health" />
       </list>
     </recent_temporary>
   </component>
@@ -233,35 +258,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CharacterShould - 2019.04.27 at 23h 56m 15s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.27 at 23h 58m 53s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.27 at 23h 58m 58s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.28 at 00h 01m 07s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.28 at 00h 01m 45s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.28 at 00h 02m 41s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.28 at 00h 07m 57s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharacterShould - 2019.04.28 at 00h 08m 12s.xml">
-      <configuration name="CharacterShould" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CharacterShould - 2019.04.28 at 00h 09m 13s.xml">
       <configuration name="CharacterShould" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CharacterShould - 2019.04.28 at 00h 09m 20s.xml">
       <configuration name="CharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 25m 05s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 25m 55s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 28m 03s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 31m 28s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 32m 04s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 32m 19s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 32m 51s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MeleeCharacterShould - 2019.04.28 at 00h 33m 02s.xml">
+      <configuration name="MeleeCharacterShould" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -272,15 +297,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.19144602" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19144602" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32988167" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32692307" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32988167" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32692307" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -334,34 +359,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CharacterShould.java">
+    <entry file="file://$PROJECT_DIR$/src/combatkata/MeleeCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="361">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/combatkata/Character.java">
+    <entry file="file://$PROJECT_DIR$/src/combatkata/MeleeCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="10" selection-start-line="3" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="117">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#202#203#0" expanded="true" />
             <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/combatkata/RangedCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MeleeCharacterShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
           </folding>
         </state>
       </provider>

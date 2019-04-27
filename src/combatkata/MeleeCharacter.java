@@ -1,34 +1,41 @@
 package combatkata;
 
-public class Character {
+public class MeleeCharacter {
     private static int MAX_HEALTH = 1000;
     private static int INITIAL_LEVEL = 1;
 
     private int health;
     private int level;
 
-    public Character() {
+    public MeleeCharacter() {
         this(INITIAL_LEVEL);
     }
 
-    public Character(int level) {
+    public MeleeCharacter(int level) {
         health = MAX_HEALTH;
         this.level = level;
     }
 
-    public void damage(Character character, int amount) {
-        if (character == this) {
+    public void damage(MeleeCharacter character, int amount, int range) {
+        if (range > 2) {
+            return;
+        }
+        this.damage(character, amount);
+    }
+
+    public void damage(MeleeCharacter meleeCharacter, int amount) {
+        if (meleeCharacter == this) {
             return;
         }
 
-        character.health -= calculateDamage(character, amount);
+        meleeCharacter.health -= calculateDamage(meleeCharacter, amount);
     }
 
-    private int calculateDamage(Character character, int amount) {
-        if (this.isOverpoweredBy(character)) {
+    private int calculateDamage(MeleeCharacter meleeCharacter, int amount) {
+        if (this.isOverpoweredBy(meleeCharacter)) {
             return reducedDamage(amount);
         }
-        if (character.isOverpoweredBy(this)){
+        if (meleeCharacter.isOverpoweredBy(this)) {
             return increasedDamage(amount);
         }
         return amount;
@@ -42,8 +49,8 @@ public class Character {
         return damage / 2;
     }
 
-    private boolean isOverpoweredBy(Character character) {
-        return character.level >= this.level + 5;
+    private boolean isOverpoweredBy(MeleeCharacter meleeCharacter) {
+        return meleeCharacter.level >= this.level + 5;
     }
 
     public void heal(int amount) {
