@@ -1,13 +1,12 @@
 package combatkata;
 
-import java.lang.reflect.Modifier;
-
 public class MeleeCharacter {
     private static int MAX_HEALTH = 1000;
     private static int INITIAL_LEVEL = 1;
 
     private int health;
     private int level;
+    private Factions factions = new Factions();
 
     public MeleeCharacter() {
         this(INITIAL_LEVEL);
@@ -22,9 +21,23 @@ public class MeleeCharacter {
         if (range > 2) {
             return;
         }
+        if (this.isAllyOf(character)) {
+            return;
+        }
         this.damage(character, amount);
     }
 
+    private boolean isAllyOf(MeleeCharacter character) {
+        return factions.atLeastOneIsSharedWith(character.factions);
+    }
+
+    /**
+     * Damage a character, as long as you're always within the range
+     *
+     * @param meleeCharacter
+     * @param amount
+     */
+    @Deprecated
     public void damage(MeleeCharacter meleeCharacter, int amount) {
         if (meleeCharacter == this) {
             return;
@@ -68,5 +81,9 @@ public class MeleeCharacter {
 
     public boolean isAlive() {
         return health > 0;
+    }
+
+    public void join(Faction faction) {
+        this.factions.add(faction);
     }
 }

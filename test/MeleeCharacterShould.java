@@ -1,3 +1,4 @@
+import combatkata.Faction;
 import combatkata.MeleeCharacter;
 import combatkata.RangedCharacter;
 import org.junit.Test;
@@ -5,6 +6,8 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 public class MeleeCharacterShould {
+
+    private static final int A_VALID_MELEE_RANGE = 1;
 
     @Test
     public void beBornWithHealth1000() {
@@ -25,7 +28,7 @@ public class MeleeCharacterShould {
     }
 
     @Test
-    public void canDealDamage() {
+    public void canDealDamage_when_they_are_not_sharing_factions() {
         MeleeCharacter meleeCharacter1 = newCharacter();
         MeleeCharacter meleeCharacter2 = newCharacter();
         meleeCharacter1.damage(meleeCharacter2, 1);
@@ -38,6 +41,17 @@ public class MeleeCharacterShould {
         weakMeleeCharacter.damage(powerfulMeleeCharacter, 10);
 
         assertEquals(1000 - 10, powerfulMeleeCharacter.getHealth());
+    }
+
+
+    @Test
+    public void enemies_can_damage_each_other(){
+        MeleeCharacter character1 = newCharacterInFaction(new Faction());
+        MeleeCharacter character2 = newCharacterInFaction(new Faction());
+
+        character1.damage(character2, 10, A_VALID_MELEE_RANGE);
+
+        assertEquals(990, character2.getHealth());
     }
 
     @Test
@@ -136,12 +150,22 @@ public class MeleeCharacterShould {
 
     @Test
     public void a_ranged_player_can_deal_damage_past_melee_range() {
-        RangedCharacter rangedCharacter = new RangedCharacter();
-        MeleeCharacter meleeCharacter2 = newCharacter();
+        {
+            RangedCharacter rangedCharacter = new RangedCharacter();
+            MeleeCharacter meleeCharacter2 = newCharacter();
 
-        rangedCharacter.damage(meleeCharacter2, 1, 15);
+            rangedCharacter.damage(meleeCharacter2, 1, 15);
 
-        assertEquals(999, meleeCharacter2.getHealth());
+            assertEquals(999, meleeCharacter2.getHealth());
+        }
+        {
+            RangedCharacter rangedCharacter = new RangedCharacter();
+            MeleeCharacter meleeCharacter2 = newCharacter();
+
+            rangedCharacter.damage(meleeCharacter2, 1, 20);
+
+            assertEquals(999, meleeCharacter2.getHealth());
+        }
     }
 
     @Test
@@ -152,6 +176,25 @@ public class MeleeCharacterShould {
         rangedCharacter.damage(meleeCharacter2, 1, 21);
 
         assertEquals(newCharacter().getHealth(), meleeCharacter2.getHealth());
+    }
+
+    @Test
+    public void allies_cannot_damage_each_other(){
+        Faction faction = new Faction();
+        MeleeCharacter character1 = newCharacterInFaction(faction);
+        MeleeCharacter character2 = newCharacterInFaction(faction);
+
+        character1.damage(character2, 10, A_VALID_MELEE_RANGE);
+
+        assertEquals(1000, character2.getHealth());
+    }
+
+
+
+    private MeleeCharacter newCharacterInFaction(Faction faction) {
+        MeleeCharacter character = newCharacter();
+        character.join(faction);
+        return character;
     }
 
 }
