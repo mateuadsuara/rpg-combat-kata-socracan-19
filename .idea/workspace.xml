@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332e4ad9-84de-4326-8cef-dbd8a0a99d18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/combatkata/Faction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/combatkata/Factions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/combatkata/FactionsShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/combat-kata/combatkata/MeleeCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/combat-kata/combatkata/MeleeCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/combat-kata/MeleeCharacterShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/combat-kata/MeleeCharacterShould.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/combatkata/MeleeCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/combatkata/MeleeCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MeleeCharacterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MeleeCharacterShould.java" afterDir="false" />
     </list>
@@ -26,12 +20,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/MeleeCharacterShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="190" lean-forward="true" selection-start-line="179" selection-end-line="190" />
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1362#1363#0" expanded="true" />
                 <element signature="e#1400#1401#0" expanded="true" />
+                <element signature="e#6307#6308#0" expanded="true" />
+                <element signature="e#6330#6331#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,17 +54,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/combatkata/MeleeCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="241">
+              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
               <folding>
                 <element signature="e#202#203#0" expanded="true" />
                 <element signature="e#237#238#0" expanded="true" />
                 <element signature="e#776#777#0" expanded="true" />
                 <element signature="e#1637#1638#0" expanded="true" />
-                <element signature="e#1919#1920#0" expanded="true" />
-                <element signature="e#1976#1977#0" expanded="true" />
-                <element signature="e#2041#2042#0" expanded="true" />
-                <element signature="e#2124#2125#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2045#2046#0" expanded="true" />
+                <element signature="e#2110#2111#0" expanded="true" />
+                <element signature="e#2193#2194#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -484,29 +480,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/combatkata/MeleeCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="241">
+          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
           <folding>
             <element signature="e#202#203#0" expanded="true" />
             <element signature="e#237#238#0" expanded="true" />
             <element signature="e#776#777#0" expanded="true" />
             <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1919#1920#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2193#2194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/MeleeCharacterShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="190" lean-forward="true" selection-start-line="179" selection-end-line="190" />
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1362#1363#0" expanded="true" />
             <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#6307#6308#0" expanded="true" />
+            <element signature="e#6330#6331#0" expanded="true" />
           </folding>
         </state>
       </provider>

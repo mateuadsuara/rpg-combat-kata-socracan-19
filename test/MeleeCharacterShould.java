@@ -45,7 +45,7 @@ public class MeleeCharacterShould {
 
 
     @Test
-    public void enemies_can_damage_each_other(){
+    public void enemies_can_damage_each_other() {
         MeleeCharacter character1 = newCharacterInFaction(new Faction());
         MeleeCharacter character2 = newCharacterInFaction(new Faction());
 
@@ -179,7 +179,7 @@ public class MeleeCharacterShould {
     }
 
     @Test
-    public void allies_cannot_damage_each_other(){
+    public void allies_cannot_damage_each_other() {
         Faction faction = new Faction();
         MeleeCharacter character1 = newCharacterInFaction(faction);
         MeleeCharacter character2 = newCharacterInFaction(faction);
@@ -189,6 +189,37 @@ public class MeleeCharacterShould {
         assertEquals(1000, character2.getHealth());
     }
 
+    @Test
+    public void allies_can_heal_each_other() {
+        Faction faction = new Faction();
+        MeleeCharacter character1 = newCharacterInFaction(faction);
+        MeleeCharacter character2 = newCharacterInFaction(faction, withHealth(990));
+
+        character1.heal(character2, 10);
+
+        assertEquals(1000, character2.getHealth());
+    }
+
+
+    @Test
+    public void enemies_cannot_heal_each_other() {
+        MeleeCharacter character1 = newCharacterInFaction(new Faction());
+        MeleeCharacter character2 = newCharacterInFaction(new Faction(), withHealth(990));
+
+        character1.heal(character2, 10);
+
+        assertEquals(990, character2.getHealth());
+    }
+
+    private int withHealth(int desiredHealth) {
+        return desiredHealth;
+    }
+
+    private MeleeCharacter newCharacterInFaction(Faction faction, int health) {
+        MeleeCharacter character = newCharacterInFaction(faction);
+        newCharacter().damage(character, 1000 - health);
+        return character;
+    }
 
 
     private MeleeCharacter newCharacterInFaction(Faction faction) {

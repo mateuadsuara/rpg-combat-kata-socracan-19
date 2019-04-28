@@ -60,6 +60,14 @@ public class MeleeCharacter {
         return meleeCharacter.level >= this.level + 5;
     }
 
+    public void heal(MeleeCharacter character, int amount) {
+        if (!isAllyOf(character)) {
+            return;
+        }
+
+        character.heal(amount);
+    }
+
     public void heal(int amount) {
         if (!this.isAlive()) {
             return;
