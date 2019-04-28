@@ -1,5 +1,7 @@
 package combatkata;
 
+import java.lang.reflect.Modifier;
+
 public class MeleeCharacter {
     private static int MAX_HEALTH = 1000;
     private static int INITIAL_LEVEL = 1;
@@ -33,12 +35,12 @@ public class MeleeCharacter {
 
     private AttackModifier calculateAttackModifier(MeleeCharacter meleeCharacter) {
         if (this.isOverpoweredBy(meleeCharacter)) {
-            return new ReducedModifier();
+            return AttackModifier.REDUCED;
         }
         if (meleeCharacter.isOverpoweredBy(this)) {
-            return new IncreasedModifier();
+            return AttackModifier.INCREASED;
         }
-        return new NoModifier();
+        return AttackModifier.NONE;
     }
 
     private boolean isOverpoweredBy(MeleeCharacter meleeCharacter) {
