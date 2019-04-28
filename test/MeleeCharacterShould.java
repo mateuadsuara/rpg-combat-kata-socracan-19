@@ -1,6 +1,8 @@
 import combatkata.Faction;
 import combatkata.MeleeCharacter;
 import combatkata.RangedCharacter;
+import combatkata.Thing;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -209,6 +211,55 @@ public class MeleeCharacterShould {
         character1.heal(character2, 10);
 
         assertEquals(990, character2.getHealth());
+    }
+
+    //@Ignore
+
+    //@Test
+    //public void a_thing_is_not_alive?????() {
+    //
+    //}
+
+    @Test
+    public void a_character_can_damage_a_thing() {
+        Thing thing = new Thing(1000);
+        MeleeCharacter character1 = newCharacterInFaction(new Faction());
+
+        character1.damage(thing, 10);
+
+        assertEquals(990, thing.getHealth());
+    }
+
+    @Test
+    public void a_thing_almost_gets_destroyed() {
+        Thing thing = new Thing(10);
+        MeleeCharacter character1 = newCharacterInFaction(new Faction());
+
+        character1.damage(thing, 9);
+
+        assertEquals(false, thing.isDestroyed());
+
+    }
+
+    @Test
+    public void a_thing_can_be_destroyed() {
+        Thing thing = new Thing(10);
+        MeleeCharacter character1 = newCharacterInFaction(new Faction());
+
+        character1.damage(thing, 10);
+
+        assertEquals(true, thing.isDestroyed());
+    }
+
+    @Test
+    public void a_thing_can_be_overly_destroyed() {
+        Thing thing = new Thing(10);
+        MeleeCharacter character1 = newCharacterInFaction(new Faction());
+
+        character1.damage(thing, Integer.MAX_VALUE);
+        character1.damage(thing, Integer.MAX_VALUE);
+
+        assertEquals(true, thing.isDestroyed());
     }
 
     private int withHealth(int desiredHealth) {

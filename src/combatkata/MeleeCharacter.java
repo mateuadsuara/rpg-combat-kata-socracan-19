@@ -27,6 +27,10 @@ public class MeleeCharacter {
         this.damage(character, amount);
     }
 
+    public void damage(Thing thing, int amount) {
+        thing.receiveDamage(amount);
+    }
+
     private boolean isAllyOf(MeleeCharacter character) {
         return factions.atLeastOneIsSharedWith(character.factions);
     }
@@ -43,7 +47,11 @@ public class MeleeCharacter {
             return;
         }
 
-        meleeCharacter.health -= calculateAttackModifier(meleeCharacter).modify(amount);
+        meleeCharacter.receiveDamage((int)calculateAttackModifier(meleeCharacter).modify(amount));
+    }
+
+    public void receiveDamage(int amount) {
+        this.health -= amount;
     }
 
     private AttackModifier calculateAttackModifier(MeleeCharacter meleeCharacter) {
@@ -94,4 +102,5 @@ public class MeleeCharacter {
     public void join(Faction faction) {
         this.factions.add(faction);
     }
+
 }
